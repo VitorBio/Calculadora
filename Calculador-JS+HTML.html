@@ -1,0 +1,82 @@
+<html>
+    <head><title></title>
+      
+    <script lang="javascript">
+            var num1, num2, operação, clear;
+            function calcular(num1)
+            {
+                document.form.textsaida.value += num1;
+            }
+
+            function operação(num2,operação)
+            {
+                
+
+                switch(operação)
+                { 
+                case "X" :
+                document.form.textsaida.value += num2;
+                document.write(num1*num2);
+                document.write(" ");   
+                break;
+
+                case "+":
+                document.form.textsaida.value += num2;
+                document.write(num1+num2);
+                document.write(" ");
+                 break;
+
+                 case "-":
+                 document.form.textsaida.value += num2;
+                 document.write(num1-num2);
+                document.write(" ");
+                break;
+
+                 case "/":
+                 document.form.textsaida.value += num2;
+                 document.write(num1/num2);
+                document.write(" ");
+                 break;
+                } 
+
+                document.form.textsaida.value += num2;
+            }
+             
+            function calcular(num2)
+            {
+                
+                
+            }
+
+
+    </script>
+    </head>
+    <body>
+    
+        <form name="form">
+            <p> saída: 
+                <input type="text" name="textsaida" readonly id="calculadoa"><br> </p>
+                <input type="button" name="um" value="1" onclick="calcular(1);">
+                <input type="button" name="dois" value="2"onclick="calcular(2);">
+                <input type="button" name="tres" value="3"onclick="calcular(3);">
+                <input type="button" name="multi" value="X"onclick="operação('X');"><br>
+                <input type="button" name="quatro" value="4" onclick="calcular(4);">
+                <input type="button" name="cinco" value="5" onclick="calcular(5);">
+                <input type="button" name="seis" value="6" onclick="calcular(6);">
+                <input type="button" name="soma" value="+" onclick="operação('+');"><br>
+                <input type="button" name="sete" value="7" onclick="calcular(7);">
+                <input type="button" name="oito" value="8"onclick="calcular(8);">
+                <input type="button" name="nove" value="9" onclick="calcular(9);">
+                <input type="button" name="subtra" value="-" onclick="operação('-');"><br>
+                <input type="button" name="limpar" value="AC" onclick="calcular('AC');">
+                <input type="button" name="virg" value="," onclick="operação(',');">
+                <input type="button" name="zero" value="0" onclick="calcular(0);">
+                <input type="button" name="divs" value="/" onclick="operação('/');">
+                <input type="button" name="igual" value="=" onclick="operaçãoF('=');">
+
+        </form>
+    </body>
+</html>
+
+
+
